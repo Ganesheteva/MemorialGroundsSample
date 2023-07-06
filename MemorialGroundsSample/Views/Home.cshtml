@@ -8,3 +8,515 @@
 <h1>Home</h1>
 
 @Model.Value("title")
+
+<img src="https://www.forevermissed.com/assets/white-label/forevermissed/images/sitepreview/main-site-preview.png?rel=1687251034085&indexation=allow"
+    alt="ForeverMissed" style="display: none!important;">
+
+<div id="global-spinner-template" class="hidden">
+    <div class="loading-overlay">
+        <div class="loader-wrapper">
+            <div class="loader"></div>
+            <div class="text">
+                LOADING </div>
+        </div>
+    </div>
+</div>
+<div id="main" class="home-page ">
+    <div id="mobile-clouds" class="with-ua-top-banner"></div>
+    <header id="header" class="with-ua-top-banner">
+        <section class="donate-ukraine-banner">
+            <div class="ukraine-flag"></div>
+            <a rel="noopener noreferrer" class="donate-page-link"
+                onclick="eventTracking.run('home_page', 'user_actions', 'fundraiser_for_ukraine_page_trigger');"
+                target="_blank" href="https://www.forevermissed.com/fundraiser-for-ukraine/">
+                <div class="banner-message desktop-only">
+                    <span class="text">We stand with our friends and colleagues in Ukraine and with all people of
+                        Ukraine.</span>
+                    <span class="learn-more-text">
+                        Learn more <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+                            <path d="M5.22513 10.0231L9.52311 5.72513L5.29797 1.5" stroke="#E6C286"
+                                stroke-width="0.99975" stroke-linecap="round">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+                <div class="banner-message mobile-only">
+                    <span>ForeverMissed stands with Ukraine.</span>
+                    <span class="learn-more-text">
+                        Learn more <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+                            <path d="M5.22513 10.0231L9.52311 5.72513L5.29797 1.5" stroke="#E6C286"
+                                stroke-width="0.99975" stroke-linecap="round">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+            </a>
+        </section>
+        <div class="container">
+
+            <div class="header-mobile-menu icon-menu-swipe menu-swipe-toggle">
+                <a href="#"><i class="fmi-menu"></i></a>
+            </div>
+            <div class="left-block">
+                <a class="main-site-logo" href="https://www.forevermissed.com/">
+                    <img class="main-site-logo__img main-site-logo__img_wide"
+                        src="/assets/white-label/forevermissed/images/main/header-logo.svg?rel=1687251034085"
+                        alt="ForeverMissed">
+                    <img class="main-site-logo__img main-site-logo__img_tiny"
+                        src="/assets/white-label/forevermissed/images/main/header-logo-tiny.svg?rel=1687251034085"
+                        alt="ForeverMissed">
+                </a>
+            </div>
+            <div class="central-block">
+                <form class="fast-search" method="get" autocomplete="off" aria-autocomplete="off"
+                    action="https://www.forevermissed.com/findmemorial/">
+                    <div class="fast-search-inner">
+                        <div class="inputs-wrap">
+                            <div class="inputs">
+                                <label for="fast-search-input" class="fast-search-label">
+                                    Find a memorial <i class="fmi-search"></i>
+                                </label>
+                                <input type="text" id="fast-search-input" class="txt placeholder-visible" name="q"
+                                    value="" size="15" placeholder="Enter the last name">
+                                <a class="icon" href="#" title="Find a Memorial"><i class="fmi-search"></i></a>
+                                <input type="submit" class="btn" value="Search" title="Find a Memorial">
+                            </div>
+                            <div class="fast-search-results">
+                                <ul class="fast-search-results-list"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="right-block">
+                <nav class="welcome-menu">
+                    <a class="welcome-menu__link" href="https://www.forevermissed.com/contactus/">
+                        Contact us </a>
+                    <a class="welcome-menu__link" href="https://www.forevermissed.com/signin/">
+                        <i class="fmi-lock"></i>
+                        Sign In </a>
+                </nav>
+                <div class="like-share-wrapper">
+                    <svg width="78" height="28" viewBox="0 0 78 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_ii)">
+                            <rect width="78" height="28" rx="4" fill="#1977F3" />
+                        </g>
+                        <rect x="0.5" y="0.5" width="77" height="27" rx="3.5" stroke="#1973E2" />
+                        <path
+                            d="M28 14C28 9.58125 24.4187 6 20 6C15.5813 6 12 9.58125 12 14C12 18.4187 15.5813 22 20 22C20.0469 22 20.0938 22 20.1406 21.9969V15.7719H18.4219V13.7688H20.1406V12.2937C20.1406 10.5844 21.1844 9.65313 22.7094 9.65313C23.4406 9.65313 24.0687 9.70625 24.25 9.73125V11.5188H23.2C22.3719 11.5188 22.2094 11.9125 22.2094 12.4906V13.7656H24.1938L23.9344 15.7688H22.2094V21.6906C25.5531 20.7312 28 17.6531 28 14Z"
+                            fill="white" />
+                        <path
+                            d="M38.0703 16.6738C38.0703 17.4355 37.7949 18.0332 37.2441 18.4668C36.6934 18.9004 35.9336 19.1172 34.9648 19.1172C33.9961 19.1172 33.2031 18.9668 32.5859 18.666V17.3418C32.9766 17.5254 33.3906 17.6699 33.8281 17.7754C34.2695 17.8809 34.6797 17.9336 35.0586 17.9336C35.6133 17.9336 36.0215 17.8281 36.2832 17.6172C36.5488 17.4062 36.6816 17.123 36.6816 16.7676C36.6816 16.4473 36.5605 16.1758 36.3184 15.9531C36.0762 15.7305 35.5762 15.4668 34.8184 15.1621C34.0371 14.8457 33.4863 14.4844 33.166 14.0781C32.8457 13.6719 32.6855 13.1836 32.6855 12.6133C32.6855 11.8984 32.9395 11.3359 33.4473 10.9258C33.9551 10.5156 34.6367 10.3105 35.4922 10.3105C36.3125 10.3105 37.1289 10.4902 37.9414 10.8496L37.4961 11.9922C36.7344 11.6719 36.0547 11.5117 35.457 11.5117C35.0039 11.5117 34.6602 11.6113 34.4258 11.8105C34.1914 12.0059 34.0742 12.2656 34.0742 12.5898C34.0742 12.8125 34.1211 13.0039 34.2148 13.1641C34.3086 13.3203 34.4629 13.4688 34.6777 13.6094C34.8926 13.75 35.2793 13.9355 35.8379 14.166C36.4668 14.4277 36.9277 14.6719 37.2207 14.8984C37.5137 15.125 37.7285 15.3809 37.8652 15.666C38.002 15.9512 38.0703 16.2871 38.0703 16.6738ZM45.2832 19H43.9004V15.0156C43.9004 14.5156 43.7988 14.1426 43.5957 13.8965C43.3965 13.6504 43.0781 13.5273 42.6406 13.5273C42.0625 13.5273 41.6367 13.7012 41.3633 14.0488C41.0938 14.3926 40.959 14.9707 40.959 15.7832V19H39.582V9.88281H40.959V12.1973C40.959 12.5684 40.9355 12.9648 40.8887 13.3867H40.9766C41.1641 13.0742 41.4238 12.832 41.7559 12.6602C42.0918 12.4883 42.4824 12.4023 42.9277 12.4023C44.498 12.4023 45.2832 13.1934 45.2832 14.7754V19ZM51.2539 19L50.9785 18.0977H50.9316C50.6191 18.4922 50.3047 18.7617 49.9883 18.9062C49.6719 19.0469 49.2656 19.1172 48.7695 19.1172C48.1328 19.1172 47.6348 18.9453 47.2754 18.6016C46.9199 18.2578 46.7422 17.7715 46.7422 17.1426C46.7422 16.4746 46.9902 15.9707 47.4863 15.6309C47.9824 15.291 48.7383 15.1055 49.7539 15.0742L50.873 15.0391V14.6934C50.873 14.2793 50.7754 13.9707 50.5801 13.7676C50.3887 13.5605 50.0898 13.457 49.6836 13.457C49.3516 13.457 49.0332 13.5059 48.7285 13.6035C48.4238 13.7012 48.1309 13.8164 47.8496 13.9492L47.4043 12.9648C47.7559 12.7812 48.1406 12.6426 48.5586 12.5488C48.9766 12.4512 49.3711 12.4023 49.7422 12.4023C50.5664 12.4023 51.1875 12.582 51.6055 12.9414C52.0273 13.3008 52.2383 13.8652 52.2383 14.6348V19H51.2539ZM49.2031 18.0625C49.7031 18.0625 50.1035 17.9238 50.4043 17.6465C50.709 17.3652 50.8613 16.9727 50.8613 16.4688V15.9062L50.0293 15.9414C49.3809 15.9648 48.9082 16.0742 48.6113 16.2695C48.3184 16.4609 48.1719 16.7559 48.1719 17.1543C48.1719 17.4434 48.2578 17.668 48.4297 17.8281C48.6016 17.9844 48.8594 18.0625 49.2031 18.0625ZM57.4473 12.4023C57.7246 12.4023 57.9531 12.4219 58.1328 12.4609L57.998 13.7441C57.8027 13.6973 57.5996 13.6738 57.3887 13.6738C56.8379 13.6738 56.3906 13.8535 56.0469 14.2129C55.707 14.5723 55.5371 15.0391 55.5371 15.6133V19H54.1602V12.5195H55.2383L55.4199 13.6621H55.4902C55.7051 13.2754 55.9844 12.9688 56.3281 12.7422C56.6758 12.5156 57.0488 12.4023 57.4473 12.4023ZM62.1699 19.1172C61.1621 19.1172 60.373 18.8242 59.8027 18.2383C59.2363 17.6484 58.9531 16.8379 58.9531 15.8066C58.9531 14.748 59.2168 13.916 59.7441 13.3105C60.2715 12.7051 60.9961 12.4023 61.918 12.4023C62.7734 12.4023 63.4492 12.6621 63.9453 13.1816C64.4414 13.7012 64.6895 14.416 64.6895 15.3262V16.0703H60.3711C60.3906 16.6992 60.5605 17.1836 60.8809 17.5234C61.2012 17.8594 61.6523 18.0273 62.2344 18.0273C62.6172 18.0273 62.9727 17.9922 63.3008 17.9219C63.6328 17.8477 63.9883 17.7266 64.3672 17.5586V18.6777C64.0312 18.8379 63.6914 18.9512 63.3477 19.0176C63.0039 19.084 62.6113 19.1172 62.1699 19.1172ZM61.918 13.4453C61.4805 13.4453 61.1289 13.584 60.8633 13.8613C60.6016 14.1387 60.4453 14.543 60.3945 15.0742H63.3359C63.3281 14.5391 63.1992 14.1348 62.9492 13.8613C62.6992 13.584 62.3555 13.4453 61.918 13.4453Z"
+                            fill="white" />
+                        <defs>
+                            <filter id="filter0_ii" x="0" y="-9" width="78" height="38" filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset dy="1" />
+                                <feGaussianBlur stdDeviation="0.5" />
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0" />
+                                <feBlend mode="normal" in2="shape" result="effect1_innerShadow" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feMorphology radius="5" operator="dilate" in="SourceAlpha"
+                                    result="effect2_innerShadow" />
+                                <feOffset dy="-9" />
+                                <feGaussianBlur stdDeviation="7" />
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.2 0" />
+                                <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow" />
+                            </filter>
+                        </defs>
+                    </svg>
+                    <div class="fb-share-button"
+                        data-href="https://www.forevermissed.com/?utm_source=Facebook&utm_medium=FB+User+Sharing+Main&utm_campaign=FB+Users+Sharing+Main&utm_content=Link+in+FB+MAIN+SITE+SHARE"
+                        data-layout="button" data-size="large" data-mobile-iframe="true">
+                        <a target="_blank"
+                            href="https://www.facebook.com/sharer/sharer.php?u=https://www.forevermissed.com/?utm_source=Facebook&utm_medium=FB+User+Sharing+Main&utm_campaign=FB+Users+Sharing+Main&utm_content=Link+in+FB+MAIN+SITE+SHARE%2F&amp;src=sdkpreparse"
+                            class="fb-xfbml-parse-ignore">
+                            Share </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-menu">
+            <nav class="wrapper">
+                <ul class="header-menu__list">
+                    <li class="header-menu__item header-menu__item_active">
+                        <a href="https://www.forevermissed.com/" class="header-menu__link"
+                            data-url="https://www.forevermissed.com/" title="Home">
+                            Home </a>
+                    </li>
+                    <li class="header-menu__item ">
+                        <a href="https://www.forevermissed.com/onlinememorialsites" class="header-menu__link"
+                            data-url="https://www.forevermissed.com/onlinememorialsites" title="About">
+                            About </a>
+                    </li>
+                    <li tabindex="0" class="header-menu__item header-menu__item_submenu ">
+                        <span title="Memorial websites" class="header-menu__link header-menu__link_label">
+                            Memorial websites <i class="fmi-arrow-down"></i>
+                        </span>
+                        <ul class="header-menu__sublist">
+                            <li class="header-menu__sublist-item ">
+                                <a href="https://www.forevermissed.com/creatememorial"
+                                    class="header-menu__link header-menu__link_submenu"
+                                    data-url="https://www.forevermissed.com/creatememorial" title="Create a Memorial"
+                                    class="submenu-link"
+                                    onclick="eventTracking.run('main_site_menu_link', 'new_memorial_trigger');">
+                                    Create a Memorial </a>
+                            </li>
+                            <li class="header-menu__sublist-item ">
+                                <a href="https://www.forevermissed.com/memorial-sites-for-loved-ones"
+                                    class="header-menu__link header-menu__link_submenu"
+                                    data-url="https://www.forevermissed.com/memorial-sites-for-loved-ones"
+                                    title="About memorial websites" class="submenu-link"
+                                    onclick="eventTracking.run('home_page', 'user_actions', 'learn_more_menu');">
+                                    About memorial websites </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-menu__item ">
+                        <a href="https://www.forevermissed.com/ourplans" class="header-menu__link"
+                            data-url="https://www.forevermissed.com/ourplans" title="Plans &amp; Features">
+                            Plans &amp; Features </a>
+                    </li>
+                    <li class="header-menu__item ">
+                        <a href="https://www.forevermissed.com/onlinememorialreviews" class="header-menu__link"
+                            data-url="https://www.forevermissed.com/onlinememorialreviews" title="Testimonials">
+                            Testimonials </a>
+                    </li>
+                    <li class="header-menu__item ">
+                        <a href="https://www.forevermissed.com/helpful-resources" class="header-menu__link"
+                            data-url="https://www.forevermissed.com/helpful-resources" title="Resources">
+                            Resources </a>
+                    </li>
+                    <li class="header-menu__item ">
+                        <a href="https://www.forevermissed.com/blog" class="header-menu__link"
+                            data-url="https://www.forevermissed.com/blog" title="Blog">
+                            Blog </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="content">
+        <div class="container">
+            <article id="page-home">
+                <section class="create-memorial-form">
+                    <div class="box-shadow"></div>
+                    <form method="post" action="/creatememorial" data-form-validate="false" class="form-inline"
+                        autocomplete="off" data-form-validate-modules="logic">
+                        <div class="create-memorial">
+                            <div class="top-block">
+                                <h1 class="form-title">
+                                    Create a Memorial Website </h1>
+                                <h3 class="title-help-text">
+                                    Preserve and share memories of your loved one </h3>
+                            </div>
+                            <div class="create-memorial-start-form central-block">
+                                <div class="inputs-wrapper">
+                                    <div class="form-group createMemorialFirstName">
+                                        <label for="createMemorialFirstName">
+                                            I want to share memories of </label>
+                                        <input type="text" name="first_name" maxlength="80" data-validation="custom"
+                                            @*data-validation-regexp='^[^\~\`\!\@\#\$\%\^\&\*\_\+\=\[\]\{\}\\\/\?\:\|\"]+$'*@
+                                            id="createMemorialFirstName" placeholder="First Name"
+                                            data-validation-error-msg-container=".first-name-error-box"
+                                            class="form-control placeholder-visible">
+                                        <div class="first-name-error-box"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="last_name" data-validation="custom" maxlength="80"
+                                           @*data-validation-regexp='^[^\~\`\!\@\#\$\%\^\&\*\_\+\=\[\]\{\}\\\/\?\:\|\"]+$'*@
+                                            placeholder="Last Name"
+                                            data-validation-error-msg-container=".last-name-error-box"
+                                            class="form-control placeholder-visible">
+                                        <div class="last-name-error-box"></div>
+                                    </div>
+                                    <div class="form-group create-memorial-actions">
+                                        <button class="button"
+                                            onclick="eventTracking.run('home_page_button', 'new_memorial_trigger');">
+                                            Get Started </button>
+                                    </div>
+                                </div>
+                                <div class="bottom-block">
+                                    <div class="cross-line"></div>
+                                    <div class="learn-more">
+                                        <a href="https://www.forevermissed.com/memorial-sites-for-loved-ones/"
+                                            onclick="eventTracking.run('home_page', 'user_actions', 'learn_more_button');">
+                                            <div class="text-wrapper">
+                                                About online memorials </div>
+                                            <div class="icon-wrapper">
+                                                <i class="fmi-chevron-right"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="cross-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+                <section class="recent-memorials">
+                    <div class="recent-memorials-block">
+                        <h2 class="title">Recent online memorials</h2>
+                        <div class="recent-memorials-container">
+                            <div class="fm-memorials">
+
+                            </div>
+                            <div class="fm-statistic">
+                                <div class="community-statistic">
+                                    <div class="community-statistic-title">
+                                        Our Community </div>
+                                    <div class="stats">
+
+                                    </div>
+                                </div>
+                                <div class="browse-all-memorials">
+                                    <a href="https://www.forevermissed.com/findmemorial/" class="all">
+                                        Browse all online memorials <i class="fmi-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="trusted-stats">
+
+                </section>
+                <section class="special-galleries">
+                    <div class="special-gallery-section">
+                        <h2 class="special-galleries-title">
+                            Memorial Galleries </h2>
+                        <div class="items-wrapper">
+                            <a href="https://www.forevermissed.com/findmemorial/" class="item fm"
+                                onclick="eventTracking.run('home_page', 'user_actions', 'all_fm_memorials');">
+                                <div class="background-image fm"></div>
+                                <p class="text">
+                                    All Memorial<br />
+                                    Websites </p>
+                                <p class="learn-more">
+                                    <span>
+                                        Learn more </span>
+                                    <i class="fmi-chevron-right"></i>
+                                </p>
+                            </a>
+                            <a href="https://www.forevermissed.com/coronavirus-victims-memorials/" class="item covid"
+                                onclick="eventTracking.run('home_page', 'user_actions', 'covid_page_trigger');">
+                                <div class="background-image covid"></div>
+                                <p class="text">
+                                    COVID-19 Coronavirus<br />
+                                    Victims Memorials </p>
+                                <p class="learn-more">
+                                    <span>
+                                        Learn more </span>
+                                    <i class="fmi-chevron-right"></i>
+                                </p>
+                            </a>
+                            <a href="https://www.forevermissed.com/veterans-memorials/" class="item veterans"
+                                onclick="eventTracking.run('home_page', 'user_actions', 'veterans_page_trigger');">
+                                <div class="background-image veterans"></div>
+                                <p class="text">
+                                    Veterans Memorials </p>
+                                <p class="learn-more">
+                                    <span>
+                                        Learn more </span>
+                                    <i class="fmi-chevron-right"></i>
+                                </p>
+                            </a>
+                            <a href="https://www.forevermissed.com/first-responders/" class="item first-responders"
+                                onclick="eventTracking.run('home_page', 'user_actions', 'first_responders_page_trigger');">
+                                <div class="background-image first-responders"></div>
+                                <p class="text">
+                                    First Responders<br />
+                                    Memorials </p>
+                                <p class="learn-more">
+                                    <span>
+                                        Learn more </span>
+                                    <i class="fmi-chevron-right"></i>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+        <div class="scroll-top hidden"><i class="fmi-arrow-up3"></i></div>
+    </main>
+    <footer id="footer" class="clearfix">
+        <div class="container">
+            <ul class="footer-menu">
+                <li><a href="https://www.forevermissed.com/memorial-sites-for-loved-ones">Memorial Websites</a>
+                </li>
+                <li><a href="https://www.shareasale.com/join/FMHP">Affiliate</a></li>
+                <li><a href="https://www.forevermissed.com/helpful-resources">Resources</a></li>
+                <li><a href="https://www.forevermissed.com/termsofuse">Terms of Use</a></li>
+                <li><a href="https://www.forevermissed.com/privacypolicy">Privacy Policy</a></li>
+                <li><a href="https://www.forevermissed.com/sitemap">Site Map</a></li>
+                <li>
+                    <a href="https://www.forevermissed.com/contactus/?&url=%2F" title="Contact Us"
+                        data-url="https://www.forevermissed.com/contactus/?&url=%2F">
+                        Contact Us </a>
+                </li>
+            </ul>
+            <div class="follow-us-wrapper">
+                <div class="text">Follow us:</div>
+                <div class="icons">
+                    <a href="https://www.facebook.com/forevermissedmemorials/" target="_blank">
+                        <i class="fmi-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/forevermissedmemorials/" target="_blank">
+                        <i class="fmi-instagram insta-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<noscript>
+    <link rel="stylesheet" href="/assets/final/forevermissed/build_1687251034085/css/noscript.css?rel=1687251034085"
+        media="screen, projection" type="text/css" />
+    <div id="noscript__mobile-clouds"></div>
+    <section class="noscript-wrapper">
+        <div class="success-box-wrapper">
+            <div class="success-box">
+                <div class="success-box__content">
+                    <div class="success-box__message">
+                        <p class="desktop-text">
+                            ForeverMissed does not work properly without JavaScript functionality of your browser.
+                            <br>Follow <a href="https://enable-javascript.com/"
+                                target="_blank">enable-javascript.com</a> site and enable javascript in your browser.
+                            <br> Than come back to ForeverMissed and reload this page.
+                        </p>
+                        <p class="mobile-text">
+                            ForeverMissed does not work properly without JavaScript functionality of your browser.
+                            Follow <a href="https://enable-javascript.com/" target="_blank">enable-javascript.com</a>
+                            site and enable javascript in your browser. Than come back to ForeverMissed <br> and reload
+                            this page.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</noscript>
+<div id="menu_swipe" class="main-site">
+    <a href="#" class="menu-swipe-toggle">
+        <i class="fmi-close-lg"></i>
+    </a>
+    <div class="swipe-header">
+        <ul class="user-guest" onclick="location.href = 'https://www.forevermissed.com/signin/';">
+            <li class="user-name">Sign In</li>
+            <li class="user-email">To add or edit content</li>
+        </ul>
+    </div>
+    <ul class="swipe-menu-list">
+        <li class="submenu-wrapper">
+            <a href="/creatememorial" onclick="eventTracking.run('main_mobile_swipe_menu', 'new_memorial_trigger');"
+                title="Create a Memorial">
+                Create a Memorial </a>
+        </li>
+        <li class="submenu-wrapper">
+            <div class="submenu-title-wrapper">
+                <span class="submenu-title">Learn More</span>
+            </div>
+            <ul class="learn-more-submenu">
+                <li>
+                    <a href="/memorial-sites-for-loved-ones">
+                        About Online Memorials </a>
+                </li>
+                <li>
+                    <a href="/ourplans" title="Plans &amp; Features">
+                        Plans &amp; Features </a>
+                </li>
+                <li>
+                    <a href="/onlinememorialreviews" title="Testimonials">
+                        Testimonials </a>
+                </li>
+                <li>
+                    <a href="/fundraiser-for-ukraine" title="How to help Ukraine">
+                        How to help Ukraine </a>
+                </li>
+                <li>
+                    <a href="/helpful-resources" title="Resources">
+                        Resources </a>
+                </li>
+                <li>
+                    <a href="/onlinememorialsites" title="Our Story">Our Story</a>
+                </li>
+            </ul>
+        </li>
+        <li class="submenu-wrapper">
+            <div class="submenu-title-wrapper">
+                <span class="submenu-title">Blog</span>
+            </div>
+            <ul>
+                <li>
+                    <a href="https://www.forevermissed.com/blog/" title="Articles">
+                        Articles </a>
+                </li>
+            </ul>
+        </li>
+        <li class="submenu-wrapper">
+            <div class="submenu-title-wrapper">
+                <span class="submenu-title">Contact</span>
+            </div>
+            <ul class="my-account-submenu">
+                <li>
+                    <a href="https://www.forevermissed.com/contactus/?inquiry_type=question_or_comment&url=%2F"
+                        data-url="https://www.forevermissed.com/contactus/?inquiry_type=question_or_comment&url=%2F"
+                        title="Help & Feedback">
+                        Help & Feedback </a>
+                </li>
+                <li>
+                    <a href="https://www.forevermissed.com/contactus/?inquiry_type=press_inquiries&url=%2F"
+                        data-url="https://www.forevermissed.com/contactus" title="Press inquiries">
+                        Press inquiries </a>
+                </li>
+                <li>
+                    <a href="https://www.shareasale.com/join/FMHP" title="Affiliate Inquiries">
+                        Affiliate Inquiries </a>
+                </li>
+            </ul>
+        </li>
+        <li class="top-line"></li>
+        <li>
+            <a href="https://www.forevermissed.com/termsofuse/">Terms of Use</a>
+        </li>
+        <li>
+            <a href="https://www.forevermissed.com/privacypolicy/">Privacy Policy</a>
+        </li>
+        <li class="top-line"></li>
+        <li>
+            <a href="https://www.facebook.com/forevermissedmemorials/" target="_blank">
+                <i class="fmi-facebook-box"></i>Visit us on Facebook </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/forevermissedmemorials/" target="_blank">
+                <i class="fmi-instagram"></i>Follow on Instagram </a>
+        </li>
+        <li class="top-line"></li>
+        <li>
+            <a href="/signin">
+                <i class="fmi-login"></i>
+                Sign In </a>
+        </li>
+        <li class="top-line"></li>
+        <li class="fb-like-wrapper">
+            <div class="fb-like" data-href="https://www.facebook.com/forevermissedmemorials/" data-layout="button_count"
+                data-action="like" data-mobile-iframe="true" data-size="large" data-show-faces="false">
+            </div>
+            <div class="fb-share-button" data-href="https://www.forevermissed.com/" data-layout="button"
+                data-size="large" data-mobile-iframe="true">
+                <a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://www.forevermissed.com/%2F&amp;src=sdkpreparse"
+                    class="fb-xfbml-parse-ignore">Share</a>
+            </div>
+        </li>
+    </ul>
+</div>
+<div id="menu_swipe_overlay" class="menu-swipe-toggle"></div>
