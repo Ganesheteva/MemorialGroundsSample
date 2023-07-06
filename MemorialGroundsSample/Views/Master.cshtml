@@ -4,5 +4,367 @@
 	Layout = null;
 }
 
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<title>Memorial Websites - Create an Online Memorial for Your Loved One</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="description" content="Share memories of your loved one on a beautiful personalized website. Invite friends and family to leave tributes, add stories, pictures and music." />
+<meta name="keywords" content="free memorial websites, memorial websites, online memorials, free online memorials, online memorial websites, tributes" />
+<meta name="Copyright" content="ForeverMissed.com" />
+<meta name="Revisit-after" content="4 day" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+<meta name="page-id" content="main:index:index" />
+<meta name="robots" content="index,follow,noimageindex" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="ForeverMissed.com" />
+<meta property="og:title" content="Memorial Websites - Create an Online Memorial for Your Loved One" />
+<meta property="og:description" content="Share memories of your loved one on a beautiful personalized website. Invite friends and family to leave tributes, add stories, pictures and music." />
+<meta property="og:image" content="https://www.forevermissed.com/assets/white-label/forevermissed/images/sitepreview/main-site-preview.png?rel=1687251034085&indexation=allow" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="640" />
+<meta property="og:image:height" content="314" />
+<meta name="twitter:title" content="Memorial Websites - Create an Online Memorial for Your Loved One" />
+<meta name="twitter:description" content="Share memories of your loved one on a beautiful personalized website. Invite friends and family to leave tributes, add stories, pictures and music." />
+<meta name="twitter:image" content="https://www.forevermissed.com/assets/white-label/forevermissed/images/sitepreview/main-site-preview.png?rel=1687251034085&indexation=allow" />
+<meta property="fb:admins" content="oleg.andelman" />
+<meta property="og:url" content="https://www.forevermissed.com/" />
+<meta property="fb:app_id" content="149099975151599" />
+
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700&amp;subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="/assets/white-label/forevermissed/images/favicon.ico?rel=1687251034085" type="image/x-icon" />
+    <link rel="stylesheet" href="~/css/style.css" media="screen, projection" type="text/css" />
+<script src='https://js.sentry-cdn.com/0b1b174fbb8845808745afdac70c8231.min.js' crossorigin="anonymous"></script>
+<script>
+    if (typeof Sentry !== 'undefined') {
+        Sentry.onLoad(function () {
+            Sentry.init({
+                release: "fm@4.1.4",
+                environment: "prod",
+                beforeSend: function (event) {
+                    if (typeof bowser === 'undefined') {
+                        return false
+                    }
+
+                    // Modify the event here
+                    if (event.user) {
+                        // Don't send user's email address
+                        delete event.user.email;
+                    }
+
+                    return event;
+                },
+                <!--// Config source https://gist.github.com/impressiver/5092952-->
+                ignoreErrors: [
+                    <!--// Random plugins/extensions-->
+                    'top.GLOBALS',
+                    <!--// See: http://blog.errorception.com/2012/03/tale-of-unfindable-js-error.html-->
+                    'originalCreateNotification',
+                    'canvas.contentDocument',
+                    'MyApp_RemoveAllHighlights',
+                    'http://tt.epicplay.com',
+                    'Can\'t find variable: ZiteReader',
+                    'jigsaw is not defined',
+                    'ComboSearch is not defined',
+                    'http://loading.retry.widdit.com/',
+                    'atomicFindClose',
+                    <!--// Facebook borked-->
+                    'fb_xd_fragment',
+                    @*// ISP "optimizing" proxy - `Cache-Control: no-transform` seems to reduce this. (thanks @acdha)*@
+                    <!--// See http://stackoverflow.com/questions/4113268/how-to-stop-javascript-injection-from-vodafone-proxy-->
+                    'bmi_SafeAddOnload',
+                    'EBCallBackMessageReceived',
+                    <!--// See http://toolbar.conduit.com/Developer/HtmlAndGadget/Methods/JSInjection.aspx-->
+                    'conduitPage',
+                    <!--// Generic error code from errors outside the security sandbox-->
+                    <!--// You can delete this if using raven.js > 1.0, which ignores these automatically.-->
+                    'Script error.',
+                    'Illegal invocation',
+                    'fullscreen error',
+                    'ResizeObserver loop limit exceeded',
+                    'Blocked a frame with origin',
+                    'Non-Error promise rejection captured with keys: currentTarget',
+                    'AddBlock enabled.',
+                    '_avast_submit',
+                    'Error: Could not load "util".',
+                    'A history state object with URL',
+                    'ClipperError',
+                    'The fetching process for the media resource was aborted by the user agent',
+                    'request was interrupted by a call to pause',
+                    'Unexpected token \'<\'',
+                    'null is not an object (evaluating \'a.tabIndex\')',
+                    'AbortError: The operation was aborted.',
+                    'Fullscreen request denied',
+                    'evaluating \'window.webkit.messageHandlers\'',
+                    'The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission',
+                    'SecurityError: The operation is insecure',
+                    'Access is denied for this document.',
+                    'instantSearchSDKJSBridgeClearHighlight',
+                    'The operation is insecure.',
+                    'SecurityError: Failed to execute',
+                    'UET is not defined',
+                    'Cannot read property \'sendEvents\' of undefined',
+                    'setting \'isExpire\'',
+                    'Unexpected identifier \'e\'. Expected \'}\' to end a object literal.',
+                    'Blocked attempt to use history.replaceState() to change session history URL from',
+                    'SyntaxError: Unexpected token \'else\'',
+                    'undefined is not an object (evaluating \'p.manager\')',
+                    'Non-Error exception captured',
+                    'Non-Error promise rejection captured',
+                    'Can\'t find variable: setIOSParameters',
+                    'Quora Pixel Error: Base pixel code is not installed properly',
+                    'ReferenceError: onPagePause is not defined',
+                    'PaymentAutofillConfig',
+                    'n.document',
+                ],
+                denyUrls: [
+                    <!--// Facebook flakiness-->
+                    /graph\.facebook\.com/i,
+                    <!--// Facebook blocked-->
+                    /connect\.facebook\.net\/en_US\/all\.js/i,
+                    <!--// Woopra flakiness-->
+                    /eatdifferent\.com\.woopra-ns\.com/i,
+                    /static\.woopra\.com\/js\/woopra\.js/i,
+                    <!--// Chrome extensions-->
+                    /extensions\//i,
+                    /^chrome:\/\//i,
+                    <!--// Other plugins-->
+                    /127\.0\.0\.1:4001\/isrunning/i,  // Cacaoweb
+                    /webappstoolbarba\.texthelp\.com\//i,
+                    /metrics\.itunes\.apple\.com\.edgesuite\.net\//i,
+                    /quicktime\//i,
+                    <!--// sentry-->
+                    /browser\.sentry\//i,
+                ],
+            })
+        })
+
+        Sentry.forceLoad();
+    }
+</script>
+
+<script type="text/javascript" src="https://www.forevermissed.com/assets/final/forevermissed/build_1687251034085/js/concatenated/top_common.js?rel=1687251034085"></script>
+<script>
+    var Lang = {};
+    window.AppMain_config = {"baseSiteUrl":"https:\/\/www.forevermissed.com\/","contactUsErrorUrl":"https:\/\/www.forevermissed.com\/contactus\/?inquiry_type=report_a_problem&url=%2F","fastSearchMinLength":3,"jsLogger":{"debugMode":0,"sendBackLogs":1,"enableGlobalWatcher":1,"showWatcherErrors":0,"sendWatcherBackLogs":1,"supportedBrowsers":{"chrome":">=105","safari":">=14.1","opera":">=90","firefox":">=104","edge":">=105"}},"showCookiePopup":false,"default_language":"us","expired_error":false,"stripe":{"publishable":"pk_live_mLMtwePd66wLXVpkeZTOoCL200TY8z37sb","currency":"usd","country":"US","locale":"en"},"google_pay":{"environment":"PRODUCTION","merchantName":"ForeverMissed.com","merchantId":"09285286893228120855","enabled":1},"apple_pay":{"enabled":1},"payment_methods":{"google_pay":"google_pay","apple_pay":"apple_pay"},"userCanceledActions":{"cancel_subscription":"canceled","delete_memorial":"deleted"}};
+</script>
+<script type="text/javascript"> //<![CDATA[
+    if (window.AppMain_config) {
+        var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/");
+        document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+</script>
+<script>
+    Lang = $.extend(Lang, {"ERROR_UNKNOWN":"Unknown error","SUBSCRIPTION_IS_CANCELLED_WILL_NOT_RENEW":"Your subscription will not longer automatically renew.","RENEW_DIALOG_TITLE":"Renew","PREMIUM_DIALOG_TITLE":"Upgrade to Premium","LIFETIME_DIALOG_TITLE":"Lifetime","LIFETIME_DIALOG_TITLE_MOBILE":"Lifetime Upgrade Offer","CANCEL_SUBSCRIPTION_BUTTON":"Cancel Subscription","CONTACT_US_SUBMIT_BUTTON":"Send","Send":"Send","SEND":"Send","CANCEL_SUBSCRIPTION":"Cancel Subscription","YOU_HAVE_CHOSEN_DELETE":"You have chosen to DELETE the memorial dedicated to ","MEMORIAL_WILL_NO_LONGER_BE_ACCESSIBLE":"This memorial will no longer be accessible to visitors.","YOUR_MEMORIAL_WAS_DELETED":"Your memorial was deleted.<br>Please <a href=\"\/contactus?url=https%3A%2F%2Fwww.forevermissed.com%2F\" target=\"_blank\">contact customer support<\/a> if you need further assistance or wish to make a recovery request.\n","YOU_CHOSEN_CANCEL_YOUR_SUBSCRIPTION":"You have chosen to cancel your subscription. This subscription will expire on {expiration_date} and will not be renewed. Continue?","REPORT_PROBLEM_DESCRIPTION":"PROBLEM DESCRIPTION:{br}{message}{br}-----------------------------------------------{br}","OK":"Ok","NO":"No","CANCEL":"Cancel","DELETE":"Delete","NO_INTERNET_CONNECTION":"No internet connection. Please reconnect and try again.","ONE_MESSAGE_WAS_SENT":"Your message was sent.","X_MESSAGES_WERE_SENT":"{0} messages were sent.","PAYMENT_INFO_REMOVED":"Payment information was removed.","TERMS_OF_USE":"Terms of Use","FACEBOOK_DOWNLOADER_MAX_PHOTO_LIMIT_REACHED":"You have reached a gallery limit for the free website. More photos can be added with a Premium plan.<a href=\"#\" data-action-url=\"|premium-dialog-page\">Learn more about upgrading.<\/a>\n","ERR_EMAIL_USED":"We already have an account associated with this email. Please retry signing in or enter another address.","REMOVE_BILLING_FORM_CONFIRMATION":"Deleting your payment profile will stop any recurring subscriptions. Proceed?","BARCODES_MANAGE":"Barcodes manage","ADMINS_MANAGE":"Admins manage","YOUR_NEW_EMAIL_SAVED":"Your account email was updated. You are now logged in.","FILE_TYPE_NOT_ALLOWED":"Error while uploading {0}. This file type is not supported.<br>Please {contact_us_for_support} for assistance.","SING_IN":"Sign In","AUDIO_CANNOT_BE_LOADED":"Could not load background music. Please try to reload the page. If error persists {contact_us_for_support}. [ {error_code} ]","CONTACT_US_FOR_SUPPORT":"contact us for support","CONTACT_MESSAGE_SENT":"Your message was sent","CONTACT_MESSAGE_SENT_TO":"{0} messages were sent.","ERROR_TYPE_B":"Could not process your request. Please try again. If error persists {contact_us_for_support}. [{error_code}]","ERROR_TYPE_C":"System has encountered an error. Please try reloading the page. If error persists {contact_us_for_support}. [{error_code}]","BORN_DATE_LESS_THAN_PASSED":"The date of passing cannot be earlier than the date of birth.","BORN_DATE_LESS_THAN_NOW":"The date of birth must be in the past.","PASSED_DATE_LESS_THAN_NOW":"The date of passing must be in the past.","VALIDATION_ERROR_DAY_NOT_EXIST":"Please enter correct date.","TOS_AGREE":"I Agree","TOS_DISAGREE":"I Disagree","BILLING_ERROR":"There was a problem.","YOU_CHOSEN_RESTORE_YOUR_SUBSCRIPTION":"You have chosen to restore your subscription. This subscription will renew on {expiration_date}. Continue?","RESTORE_SUBSCRIPTION":"Restore subscription","SUBSCRIPTION_RESTORED":"Your subscription restored.","NO_MORE_QR_CODE":"No more unassigned QR codes","MINIMUM_YEAR_ERROR":"Please enter correct date.","FORMVALIDATOR_ERROR_TITLE":"Error submitting form.","FORMVALIDATOR_REQUIRED_FIELD":"This is a required field.","FORMVALIDATOR_REQUIRED_FIELDS":"Please fill in all required fields.","FORMVALIDATOR_BAD_TIME":"Time value is incorrect.","FORMVALIDATOR_BAD_EMAIL":"Please enter a valid email address.","FORMVALIDATOR_BAD_TELEPHONE":"Incorrect phone number format.","FORMVALIDATOR_BAD_SECURITY_ANSWER":"Incorrect answer to security question.","FORMVALIDATOR_BAD_DATE":"Incorrect date format.","FORMVALIDATOR_LENGTH_BAD_START":"Please enter a value between ","FORMVALIDATOR_LENGTH_BAD_END":" characters.","FORMVALIDATOR_LENGTH_TOO_LONG_START":"The input value cannot be longer than ","FORMVALIDATOR_LENGTH_TOO_SHORT_START":"The input value cannot be shorter than ","FORMVALIDATOR_NOT_CONFIRMED":"Fields do not match.","FORMVALIDATOR_BAD_DOMAIN":"Incorrect domain name format.","FORMVALIDATOR_BAD_URL":"Incorrect URL format.","FORMVALIDATOR_BAD_CUSTOM_VAL":"The input value is incorrect","FORMVALIDATOR_AND_SPACES":" and spaces ","FORMVALIDATOR_BAD_INT":"Numeric value is incorrect.","FORMVALIDATOR_BAD_SECURITY_NUMBER":"Incorrect social security number format.","FORMVALIDATOR_BAD_UK_VAT_ANSWER":"Incorrect UK VAT Number","FORMVALIDATOR_BAD_UKIN":"Incorrect UK NIN.","FORMVALIDATOR_BAD_UTR":"Incorrect UK UTR Number.","FORMVALIDATOR_BAD_STRENGTH":"Your password is too weak.","FORMVALIDATOR_BAD_NUMBER_OF_SELECTED_OPTION_START":"Please select at least ","FORMVALIDATOR_BAD_NUMBER_OF_SELECTED_OPTIONS_END":" answers","FORMVALIDATOR_BAD_ALPHA_NUMERIC":"The input value can only contain alphanumeric characters ","FORMVALIDATOR_BAD_ALPHANUMERIC_EXTRA":" and ","FORMVALIDATOR_WRONG_FILE_SIZE":"The file you are trying to upload is too large (max %s).","FORMVALIDATOR_WRONG_FILE_TYPE":"This file type is not supported. Supported file types %s","FORMVALIDATOR_GROUP_CHECKED_RANGE_START":"Please choose between ","FORMVALIDATOR_GROUP_CHECKED_TOO_FEW_START":"Please choose at least ","FORMVALIDATOR_GROUP_CHECKED_TOO_MANY_START":"Please choose a maximum of ","FORMVALIDATOR_GROUP_CHECKED_END":" item(s)","FORMVALIDATOR_BAD_CREDIT_CARD":"Incorrect credit card number. Please re-enter.","FORMVALIDATOR_BAD_CVV":"Incorrect CVV code. Please check and try again.","FORMVALIDATOR_WRONG_FILE_DIM":"Incorrect image dimensions,","FORMVALIDATOR_IMAGE_TOO_TALL":"the image can not be taller than","FORMVALIDATOR_IMAGE_TOO_WIDE":"the image can not be wider than","FORMVALIDATOR_IMAGE_TOO_SMALL":"the image was too small","FORMVALIDATOR_MIN":"min","FORMVALIDATOR_MAX":"max","FORMVALIDATOR_IMAGE_RATIO_NOT_ACCEPTED":"Image ratio is not accepted","STRIPE_CARD_DECLINE_RATE_LIMIT_EXCEEDED":"This card has been declined too many times. You can try to charge this card again after 24 hours.","STRIPE_CARD_DECLINED":"The card has been declined.","STRIPE_COUPON_EXPIRED":"The coupon has expired","STRIPE_EMAIL_INVALID":"The email address is invalid (e.g., not properly formatted).","STRIPE_EXPIRED_CARD":"The card has expired. Check the expiration date or use a different card.","STRIPE_INCORRECT_ADDRESS":"The card's address is incorrect. Check the card's address or use a different card.","STRIPE_INCORRECT_CVC":"The card's security code is incorrect. Check the card's security code or use a different card.","STRIPE_INCORRECT_NUMBER":"The card number is incorrect. Check the card\u2019s number or use a different card.","STRIPE_INCORRECT_ZIP":"The card's ZIP code is incorrect. Check the card\u2019s ZIP code or use a different card.","STRIPE_INSTANT_PAYOUTS_UNSUPPORTED":"This card is not eligible for Instant Payouts. Try a debit card.","STRIPE_INVALID_CARD_TYPE":"The card provided as an external account is not supported for payouts. Provide a non-prepaid debit card instead.","STRIPE_INVALID_CVC":"The card's security code is invalid. Check the card's security code or use a different card.","STRIPE_INVALID_EXPIRY_MONTH":"The card's expiration month is incorrect. Check the expiration date or use a different card.","STRIPE_INVALID_EXPIRY_YEAR":"The card's expiration year is incorrect. Check the expiration date or use a different card.","STRIPE_INVALID_NUMBER":"The card number is invalid. Check the card details or use a different card.","STRIPE_POSTAL_CODE_INVALID":"The ZIP code provided was incorrect.","STRIPE_PROCESSING_ERROR":"An error occurred while processing the card. Check the card details are correct or use a different card.","INCOMPLETE_EXPIRY":"Your card's expiration date is incomplete.","INCOMPLETE_CVC":"Your card's security code is incomplete.","INCOMPLETE_NUMBER":"Your card number is incomplete.","INVALID_EXPIRY_YEAR_PAST":"Your card's expiration year is in the past.","ERR_EMPTY":"Please add any tags","ERR_FORMAT":"Wrong format","ERR_NOT_FOUND":"Tag not found in our database","ERR_TAKEN":"Tag already assigned with some memorial","CANCEL_SUBSCRIPTION_GO_BACK":"Go Back","CONTAIN_LEAST_3":"Too few characters. Try a combination of the first and last name for better results.","UNLINK_TAG":"Tag will now be unlinked. Would you like to proceed?","DATA_TABLE_INFO_ENTRIES":"Showing _START_ to _END_ of _TOTAL_ entries","DATA_TABLE_EMPTY_ENTRIES":"Showing 0 to 0 of 0 entries","DATA_TABLE_SHW_MENU":"Show _MENU_ entries","DATA_TABLE_SEARCH":"Search:","DATA_TABLE_PAGINATE_NEXT":"Next","DATA_TABLE_PAGINATE_PREVIOUS":"Previous","DATA_TABLE_EMPTY_TABLE":"No data available in table","DATA_TABLE_FILTERED_FROM_MAX":"(filtered from _MAX_ total entries)","DATA_TABLE_LOADING":"Loading...","DATA_TABLE_PAGINATE_FIRST":"First","DATA_TABLE_PAGINATE_LAST":"Last","DATA_TABLE_PROCESSING":"Processing...","DATA_TABLE_ZERO_RECORDS":"No matching records found","DATA_TABLE_MENU_SELECT_OPTION_ALL":"All","REDACTOR_UNDO":"Undo","REDACTOR_REDO":"Redo","REDACTOR_CLEAN_FORMATTING":"Clean formatting","REDACTOR_CHANGE_FONT_FAMILY":"Change Font Family","REDACTOR_CHANGE_FONT_SIZE":"Change Font Size","REDACTOR_PRINT":"Print","REDACTOR_HTML":"HTML","REDACTOR_VIDEO":"Insert Video","REDACTOR_IMAGE":"Insert Image","REDACTOR_TABLE":"Table","REDACTOR_LINK":"Link","REDACTOR_LINK_INSERT":"Insert link","REDACTOR_LINK_EDIT":"Edit link","REDACTOR_UNLINK":"Unlink","REDACTOR_FORMATTING":"Formatting","REDACTOR_PARAGRAPH":"Normal text","REDACTOR_QUOTE":"Quote","REDACTOR_CODE":"Code","REDACTOR_HEADER_1":"Header 1","REDACTOR_HEADER_2":"Header 2","REDACTOR_HEADER_3":"Header 3","REDACTOR_HEADER":"Header","REDACTOR_SUBHEADER":"Subheader","REDACTOR_BOLD":"Bold","REDACTOR_ITALIC":"Italic","REDACTOR_FONTCOLOR":"Font Color","REDACTOR_BACKCOLOR":"Back Color","REDACTOR_UNORDEREDLIST":"Unordered List","REDACTOR_ORDEREDLIST":"Ordered List","REDACTOR_OUTDENT":"Outdent","REDACTOR_INDENT":"Indent","REDACTOR_CANCEL":"Cancel","REDACTOR_INSERT":"Insert","REDACTOR_SAVE":"Save","REDACTOR__DELETE":"Delete","REDACTOR_INSERT_TABLE":"Insert Table","REDACTOR_INSERT_ROW_ABOVE":"Add Row Above","REDACTOR_INSERT_ROW_BELOW":"Add Row Below","REDACTOR_INSERT_COLUMN_LEFT":"Add Column Left","REDACTOR_INSERT_COLUMN_RIGHT":"Add Column Right","REDACTOR_DELETE_COLUMN":"Delete Column","REDACTOR_DELETE_ROW":"Delete Row","REDACTOR_DELETE_TABLE":"Delete Table","REDACTOR_ROWS":"Rows","REDACTOR_COLUMNS":"Columns","REDACTOR_ADD_HEAD":"Add Head","REDACTOR_DELETE_HEAD":"Delete Head","REDACTOR_TITLE":"Title","REDACTOR_IMAGE_POSITION":"Position","REDACTOR_NONE":"None","REDACTOR_LEFT":"Left","REDACTOR_RIGHT":"Right","REDACTOR_CENTER":"Center","REDACTOR_IMAGE_WEB_LINK":"Image Web Link","REDACTOR_TEXT":"Text","REDACTOR_MAILTO":"Email","REDACTOR_WEB":"URL","REDACTOR_VIDEO_HTML_CODE":"Video Embed Code or Youtube\/Vimeo Link","REDACTOR_FILE":"Insert File","REDACTOR_UPLOAD":"Upload","REDACTOR_DOWNLOAD":"Download","REDACTOR_CHOOSE":"Choose","REDACTOR_OR_CHOOSE":"Or choose","REDACTOR_DROP_FILE_HERE":"Drop file here","REDACTOR_ALIGN_LEFT":"Align text to the left","REDACTOR_ALIGN_CENTER":"Center text","REDACTOR_ALIGN_RIGHT":"Align text to the right","REDACTOR_ALIGN_JUSTIFY":"Justify text","REDACTOR_HORIZONTALRULE":"Insert Horizontal Rule","REDACTOR_DELETED":"Deleted","REDACTOR_ANCHOR":"Anchor","REDACTOR_LINK_NEW_TAB":"Open link in new tab","REDACTOR_UNDERLINE":"Underline","REDACTOR_ALIGNMENT":"Alignment","REDACTOR_FILENAME":"Name (optional)","REDACTOR_EDIT":"Edit","REDACTOR_UPLOAD_LABEL":"Drop file here or ","ACRONYM_CONFIGURATIONS_ACCOUNT_FULL_NAME":"{account_first_name} {account_last_name}","ADVANCED_SEARCH_CONTAIN_LEAST_3":"Too few characters. Try a combination of the first and last name for better results.","MEMORIAL_QR_CODES_CHANGES_SAVED":"Changes were saved","MEMORIAL_QR_CODES_CHANGES_SAVED_ERROR":"There was an error during saving changes","CANT_GET_FACEBOOK_SOCIAL_PROFILE":"Facebook login failed. Please login via standard login form.","CANT_GET_GOOGLE_SOCIAL_PROFILE":"Google login failed. Please login via standard login form.","CANT_GET_SOCIAL_PROFILE":"Login failed. Please login via standard login form.","TRY_ADVANCE_SEARCH":"Try advanced search","COOKIE_POPUP_TEXT":"By visiting the site, you accept our use of cookies. <a href=\"\/privacypolicy\" target=\"_blank\">Learn more.<\/a>\n","COOKIE_POPUP_UNDERSTAND_BUTTON_LABEL":"I Understand","MEMORIAL_CREATION_SESSION_EXPIRED_ERROR_MSG":"Your session has expired. Please re-enter your loved one's details.","DATE_DROPDOWN_YEAR":"Year","DATE_DROPDOWN_MONTH":"Month","DATE_DROPDOWN_DAY":"Day","DATE_DROPDOWN_MONTH_JAN":"January","DATE_DROPDOWN_MONTH_FEB":"February","DATE_DROPDOWN_MONTH_MAR":"March","DATE_DROPDOWN_MONTH_APR":"April","DATE_DROPDOWN_MONTH_MAY":"May","DATE_DROPDOWN_MONTH_JUN":"June","DATE_DROPDOWN_MONTH_JUL":"July","DATE_DROPDOWN_MONTH_AUG":"August","DATE_DROPDOWN_MONTH_SEP":"September","DATE_DROPDOWN_MONTH_OCT":"October","DATE_DROPDOWN_MONTH_NOV":"November","DATE_DROPDOWN_MONTH_DEC":"December"});
+    //jquery form-validate messages
+    var formValidatorTranslations = {
+        errorTitle: Lang['FORMVALIDATOR_ERROR_TITLE'],
+        requiredField: Lang['FORMVALIDATOR_REQUIRED_FIELD'],
+        requiredFields: Lang['FORMVALIDATOR_REQUIRED_FIELDS'],
+        badTime: Lang['FORMVALIDATOR_BAD_TIME'],
+        badEmail: Lang['FORMVALIDATOR_BAD_EMAIL'],
+        badTelephone: Lang['FORMVALIDATOR_BAD_TELEPHONE'],
+        badSecurityAnswer: Lang['FORMVALIDATOR_BAD_SECURITY_ANSWER'],
+        badDate: Lang['FORMVALIDATOR_BAD_DATE'],
+        lengthBadStart: Lang['FORMVALIDATOR_LENGTH_BAD_START'],
+        lengthBadEnd: Lang['FORMVALIDATOR_LENGTH_BAD_END'],
+        lengthTooLongStart: Lang['FORMVALIDATOR_LENGTH_TOO_LONG_START'],
+        lengthTooShortStart: Lang['FORMVALIDATOR_LENGTH_TOO_SHORT_START'],
+        notConfirmed: Lang['FORMVALIDATOR_NOT_CONFIRMED'],
+        badDomain: Lang['FORMVALIDATOR_BAD_DOMAIN'],
+        badUrl: Lang['FORMVALIDATOR_BAD_URL'],
+        badCustomVal: Lang['FORMVALIDATOR_BAD_CUSTOM_VAL'],
+        andSpaces: Lang['FORMVALIDATOR_AND_SPACES'],
+        badInt: Lang['FORMVALIDATOR_BAD_INT'],
+        badSecurityNumber: Lang['FORMVALIDATOR_BAD_SECURITY_NUMBER'],
+        badUKVatAnswer: Lang['FORMVALIDATOR_BAD_UK_VAT_ANSWER'],
+        badUKNin: Lang['FORMVALIDATOR_BAD_UKIN'],
+        badUKUtr: Lang['FORMVALIDATOR_BAD_UTR'],
+        badStrength: Lang['FORMVALIDATOR_BAD_STRENGTH'],
+        badNumberOfSelectedOptionsStart: Lang['FORMVALIDATOR_BAD_NUMBER_OF_SELECTED_OPTION_START'],
+        badNumberOfSelectedOptionsEnd: Lang['FORMVALIDATOR_BAD_NUMBER_OF_SELECTED_OPTIONS_END'],
+        badAlphaNumeric: Lang['FORMVALIDATOR_BAD_ALPHA_NUMERIC'],
+        badAlphaNumericExtra: Lang['FORMVALIDATOR_BAD_ALPHANUMERIC_EXTRA'],
+        wrongFileSize: Lang['FORMVALIDATOR_WRONG_FILE_SIZE'],
+        wrongFileType: Lang['FORMVALIDATOR_WRONG_FILE_TYPE'],
+        groupCheckedRangeStart: Lang['FORMVALIDATOR_GROUP_CHECKED_RANGE_START'],
+        groupCheckedTooFewStart: Lang['FORMVALIDATOR_GROUP_CHECKED_TOO_FEW_START'],
+        groupCheckedTooManyStart: Lang['FORMVALIDATOR_GROUP_CHECKED_TOO_MANY_START'],
+        groupCheckedEnd: Lang['FORMVALIDATOR_GROUP_CHECKED_END'],
+        badCreditCard: Lang['FORMVALIDATOR_BAD_CREDIT_CARD'],
+        badCVV: Lang['FORMVALIDATOR_BAD_CVV'],
+        wrongFileDim : Lang['FORMVALIDATOR_WRONG_FILE_DIM'],
+        imageTooTall : Lang['FORMVALIDATOR_IMAGE_TOO_TALL'],
+        imageTooWide : Lang['FORMVALIDATOR_IMAGE_TOO_WIDE'],
+        imageTooSmall : Lang['FORMVALIDATOR_IMAGE_TOO_SMALL'],
+        min : Lang['FORMVALIDATOR_MIN'],
+        max : Lang['FORMVALIDATOR_MAX'],
+        imageRatioNotAccepted : Lang['FORMVALIDATOR_IMAGE_RATIO_NOT_ACCEPTED']
+    };
+</script>
+
+<script type="text/javascript" src="https://js.stripe.com/v3/"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvZM_m5n7BEw-85ySl7NUsj5-ZVuboLU0&language=en&libraries=places&defer=1&callback=Function.prototype" defer></script>
+<script type="text/javascript" src="https://www.forevermissed.com/assets/final/forevermissed/build_1687251034085/js/concatenated/main_build.js?rel=1687251034085"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-9670995-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-9670995-1', {'optimize_id': 'GTM-TL93W66'});
+gtag('config', 'G-GRDXD8GF9S');
+gtag('config', 'AW-1033132668');
+
+</script>
+<style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',3000,
+{'GTM-TL93W66':true});</script>
+<script type="text/javascript">
+
+	window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '149099975151599',
+            xfbml      : true,
+            version    : 'v16.0'
+        });
+    };
+</script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js"></script><script>
+//Facebook PIXEL
+!function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_GB/fbevents.js');
+    
+    fbq('init', '1790293291237404'); 
+    fbq('track', 'PageView');
+</script>
+<noscript>
+    <img height="1" width="1" src="https://www.facebook.com/tr?id=1790293291237404&ev=PageView&noscript=1"/>
+</noscript>
+<script>
+    (function(w,d,t,r,u){
+        var f,n,i;w[u]=w[u]||[],f=function(){
+            var o={ti:"5664136"}; o.q=w[u];
+            if (w.UET) w[u] = new w.UET(o) || [];
+            w[u].push("pageLoad");
+        },
+        n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)
+    })(window,document,"script","//bat.bing.com/bat.js","uetq");
+</script>
+
+<script>
+!function(e){if(!window.pintrk){window.pintrk = function () {
+window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
+      n=window.pintrk;n.queue=[],n.version="3.0";var
+      t=document.createElement("script");t.async=!0,t.src=e;var
+      r=document.getElementsByTagName("script")[0];
+      r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+
+if(typeof pintrk != "undefined") {
+    if(0){
+        pintrk('load', '2614195089852', {em: ''});
+    } else {
+        pintrk('load', '2614195089852');    
+    }
+    pintrk('page');
+    pintrk('track', 'pagevisit');
+}
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt=""
+      src="https://ct.pinterest.com/v3/?tid=2614195089852&noscript=1" />
+</noscript>
+
+</script>
+<script>
+    !function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
+    if (typeof qp != "undefined") {
+        qp('init', '3c718a052b884cdc9c917535e5a78276');
+        qp('track', 'ViewContent');   
+    }
+</script>
+<noscript>
+    <img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/3c718a052b884cdc9c917535e5a78276/pixel?tag=ViewContent&noscript=1"/>
+</noscript>
+
+<script>
+!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','t2_3nkq96z4');rdt('track', 'PageVisit');
+</script>
+
+
+
+<script>
+    rdt('track', 'ViewContent');
+</script>
+<script>
+var shareasaleSSCID=shareasaleGetParameterByName("sscid");
+function shareasaleSetCookie(e,a,r,s,t){if(e&&a){var o,n=s?"; path="+s:"",i=t?"; domain="+t:"",l="";r&&((o=new Date).setTime(o.getTime()+r),l="; expires="+o.toUTCString()),document.cookie=e+"="+a+l+n+i}}function shareasaleGetParameterByName(e,a){a||(a=window.location.href),e=e.replace(/[\[\]]/g,"\$&");var r=new RegExp("[?&]"+e+"(=([^&#]*)|&|#|$)").exec(a);return r?r[2]?decodeURIComponent(r[2].replace(/\+/g," ")):"":null}shareasaleSSCID&&shareasaleSetCookie("shareasaleSSCID",shareasaleSSCID,94670778e4,"/");
+</script>
+<script>
+    !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+    },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+    a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+    twq('init', 'o3sfk');
+    twq('track','PageView');
+</script>
+
+<script type="application/ld+json">
+    {
+        @*"@context" : "http://schema.org",
+        "@type" : "Product",*@
+        "name" : "Online Memorials",
+        "image" : "https://www.forevermissed.com/assets/images/feature02.png",
+        "description" : "Share memories of your loved one on a beautiful personalized website. Invite friends and family to leave tributes, add stories, pictures and music.",
+        "url" : "http://forevermissed.com/",
+        "brand" : {
+            @*"@type" : "Brand",*@
+            "name" : "ForeverMissed",
+            "logo" : "https://www.forevermissed.com/assets/white-label/forevermissed/images/sitepreview/main-site-preview.png?rel=1687251034085&indexation=allow"
+        },
+        "offers" : {
+            @*"@type" : "Offer",*@
+            "price": "0",
+            "minPrice": "0",
+            "maxPrice": "154.99",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating" : {
+           @* "@type" : "AggregateRating",*@
+            "ratingValue" : "4.8",
+            "bestRating" : "5.0",
+            "worstRating" : "1.0",
+            "ratingCount" : "819"
+        },
+        "review" : {
+           @* "@type" : "Review",*@
+            "author" : {
+                @*"@type" : "Person",*@
+                "name" : "Beth"
+            },
+            "datePublished" : "2023-03-01",
+            "reviewRating" : {
+                @*"@type" : "Rating",*@
+                "ratingValue" : "5.0"
+            },
+            "reviewBody" : "This is the second time I've used Forever Missed to create a memorial website--first in 2019 for my mother and now for my father. The site enables you and anyone else who knew your loved one to share photos and stories. Everyone with whom I've shared these sites has loved them. And they are available forever to those who follow us to see the history of our family."
+        }
+    }
+</script>
+</head>
+<body id="fm-production" class=" webkit safari chrome win" data-page-id="main:index:index">
 
 @RenderBody()
+
+<script type="text/javascript" src="https://www.forevermissed.com/assets/final/forevermissed/build_1687251034085/js/concatenated/vue_components.js?rel=1687251034085"></script>
+</body>
+</html>
